@@ -1,0 +1,11 @@
+### GET Fetch current user
+GET https://ticketing.com/api/users/currentuser
+
+### POST Create new user
+POST https://ticketing.com/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "user@email.com",
+  "password": 1234
+}

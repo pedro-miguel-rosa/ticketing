@@ -1,3 +1,7 @@
-/dist/
 /node_modules/
+/build/
+/coverage/
+/src/tests/
+/src/**/*.test.ts
 client.http
+jest.config.json

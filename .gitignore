@@ -1,4 +1,5 @@
 # auth
 /auth/dist/
 /auth/node_modules/
+/auth/.idea/
 

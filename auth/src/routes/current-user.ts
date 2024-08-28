@@ -1,11 +1,13 @@
-import express from "express";
+import express, { Request, Response } from "express";
+import { currentUser } from "../middlewares/current-user";
 
 const router = express.Router();
 
 router.get(
   "/api/users/currentuser",
-  async (req: express.Request, res: express.Response) => {
-    res.status(200).send("Hi there!");
+  currentUser,
+  (req: Request, res: Response) => {
+    res.send({ currentUser: req.currentUser || null });
   },
 );
 

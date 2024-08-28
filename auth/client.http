@@ -1,11 +1,25 @@
 ### GET Fetch current user
 GET https://ticketing.com/api/users/currentuser
 
-### POST Create new user
+### POST SignUp
 POST https://ticketing.com/api/users/signup
 Content-Type: application/json
 
 {
   "email": "user@email.com",
-  "password": 1234
+  "password": "1234"
 }
+
+### POST SignIn
+POST https://ticketing.com/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "user@email.com",
+  "password": "1234"
+}
+
+### POST SignOut
+POST https://ticketing.com/api/users/signout
+
+

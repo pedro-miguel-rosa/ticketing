@@ -1,8 +1,2 @@
 # Global
 /.idea/
-
-# auth
-/auth/build/
-/auth/node_modules/
-/auth/.idea/
-/auth/coverage/

@@ -1,0 +1,23 @@
+### POST Create Ticket
+POST https://ticketing.com/api/tickets
+Content-Type: application/json
+
+{
+  "title": "Concert",
+  "price": 20
+}
+
+### GET Show Ticket
+GET https://ticketing.com/api/tickets/66d897a1918731327821c1e1
+
+### GET All Tickets
+GET https://ticketing.com/api/tickets
+
+### PUT Update Ticket
+PUT https://ticketing.com/api/tickets/66d897a1918731327821c1e1
+Content-Type: application/json
+
+{
+  "title": "Soccer",
+  "price": 15
+}

@@ -14,7 +14,7 @@ GET https://ticketing.com/api/tickets/66d897a1918731327821c1e1
 GET https://ticketing.com/api/tickets
 
 ### PUT Update Ticket
-PUT https://ticketing.com/api/tickets/66d897a1918731327821c1e1
+PUT https://ticketing.com/api/tickets/66e17122ec50bddeb53b7614
 Content-Type: application/json
 
 {

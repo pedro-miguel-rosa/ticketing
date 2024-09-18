@@ -1,0 +1,5 @@
+{
+  "testEnvironment": "node",
+  "setupFilesAfterEnv": ["./build/tests/setup.js"],
+  "testMatch": ["**/build/**/*.test.js"]
+}

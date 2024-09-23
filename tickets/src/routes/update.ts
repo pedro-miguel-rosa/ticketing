@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import {
   asyncHandler,
+  BadRequestError,
   NotAuthorizedError,
   NotFoundError,
   requireAuth,
@@ -34,6 +35,10 @@ router.put(
       throw new NotAuthorizedError();
     }
 
+    if (ticket.orderId) {
+      throw new BadRequestError("Cannot edit a reserved ticket");
+    }
+
     ticket.set({
       title: req.body.title,
       price: req.body.price,
@@ -46,6 +51,7 @@ router.put(
       title: ticket.title,
       price: ticket.price,
       userId: ticket.userId,
+      version: ticket.version,
     });
 
     res.status(200).send(ticket);

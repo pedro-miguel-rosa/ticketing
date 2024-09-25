@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "title": "Concert",
-  "price": 20
+  "price": 10
 }
 
 ### GET Show Ticket

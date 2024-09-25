@@ -1,0 +1,8 @@
+/node_modules/
+/build/
+/coverage/
+/src/tests/
+/src/__mocks__/
+/src/**/*.test.ts
+client.http
+jest.config.json

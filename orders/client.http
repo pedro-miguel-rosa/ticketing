@@ -3,8 +3,7 @@ POST https://ticketing.com/api/orders
 Content-Type: application/json
 
 {
-  "title": "Concert",
-  "price": 20
+  "ticketId": "66f3e7992ab131989bd98658"
 }
 
 ### GET Show Order

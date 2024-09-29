@@ -1,0 +1,8 @@
+### POST Create Payment
+POST https://ticketing.com/api/payments
+Content-Type: application/json
+
+{
+  "token": "tok_visa",
+  "orderId": "66f9779c89a0224e7d8bc0b6"
+}

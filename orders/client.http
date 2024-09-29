@@ -3,11 +3,11 @@ POST https://ticketing.com/api/orders
 Content-Type: application/json
 
 {
-  "ticketId": "66f3e7992ab131989bd98658"
+  "ticketId": "66f977958967aa2666686dc0"
 }
 
 ### GET Show Order
-GET https://ticketing.com/api/orders/66d897a1918731327821c1e1
+GET https://ticketing.com/api/orders/66f9779c89a0224e7d8bc0b6
 
 ### GET All Tickets
 GET https://ticketing.com/api/orders

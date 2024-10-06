@@ -2,13 +2,15 @@ name: tests
 
 on:
   pull_request:
-    branches: [ "master" ]
+    branches:
+     - master
 
 jobs:
   build:
+    name: Unit Tests
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - run: cd auth
-    - run: npm install
-    - run: npm test:ci
+      - uses: actions/checkout@v4
+      - run: cd auth
+      - run: npm install
+      - run: npm test:ci

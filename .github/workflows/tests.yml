@@ -1,4 +1,4 @@
-name: tests
+name: Auth Tests
 
 on:
   pull_request:
@@ -9,9 +9,16 @@ on:
 jobs:
   build:
     name: Unit Tests
-    runs-on: Ubuntu 2-core
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: cd ./auth
-      - run: npm install
-      - run: npm test:ci
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Change Directory to auth/
+        run: cd auth
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Tests
+        run: npm test:ci

@@ -11,7 +11,7 @@ jobs:
     name: Unit Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: cd auth
+      - uses: actions/checkout@v2
+      - run: cd ./auth
       - run: npm install
       - run: npm test:ci

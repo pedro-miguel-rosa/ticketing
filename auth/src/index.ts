@@ -20,6 +20,7 @@ const main = async () => {
 };
 
 main().catch((error) => {
+  console.log("CLosing app...");
   console.error("Error during server initialization:", error);
   process.exit(1); // Exit with failure code
 });

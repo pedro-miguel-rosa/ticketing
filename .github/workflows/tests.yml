@@ -14,11 +14,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Change Directory to auth/
-        run: cd auth
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Tests
-        run: npm test:ci
+      - name: Install dependencies and Run Tests in auth/
+        run: |
+          cd auth
+          npm install
+          npm test:ci

@@ -1,21 +1,15 @@
-name: Auth Tests
+name: Tests
 
 on:
-  pull_request:
-    branches:
-     - master
-  workflow_dispatch:
+  pull_request
 
 jobs:
   build:
-    name: Unit Tests
+    name: Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Install dependencies and Run Tests in auth/
-        run: |
-          cd auth
-          npm install
-          npm run test:ci
+        run: cd auth && npm install && npm run test:ci

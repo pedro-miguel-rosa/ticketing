@@ -1,0 +1,14 @@
+name: test-payments
+
+on:
+  pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install dependencies and Run Tests in payments/
+        run: cd payments && npm install && npm run test:ci

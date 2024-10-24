@@ -8,6 +8,7 @@
     "start": "node build/index.js",
     "dev": "tsc --preserveWatchOutput --watch  & node --watch build/index.js",
     "test": "tsc --watch & jest --watchAll",
+    "test:ci": "tsc && jest",
     "test:coverage": "jest --coverage"
   },
   "keywords": [],

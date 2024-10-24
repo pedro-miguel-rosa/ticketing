@@ -2,6 +2,8 @@ import { app } from "./app";
 import mongoose from "mongoose";
 
 const main = async () => {
+  console.log("Starting app...");
+
   if (!process.env.JWT_KEY) {
     throw new Error("JWT_KEY must be defined");
   }
@@ -18,6 +20,7 @@ const main = async () => {
 };
 
 main().catch((error) => {
+  console.log("Closing app...");
   console.error("Error during server initialization:", error);
   process.exit(1); // Exit with failure code
 });

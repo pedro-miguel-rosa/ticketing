@@ -1,0 +1,10 @@
+### GET Posts
+GET http://posts.com/posts
+
+### Create Post
+POST http://192.168.49.2:30442/posts
+Content-Type: application/json
+
+{
+  "title": "First Post"
+}

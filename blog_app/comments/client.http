@@ -1,0 +1,10 @@
+### GET Comments
+GET http://192.168.49.2:4001/posts/8714bf29/comments
+
+### Create Comment
+POST http://192.168.49.2:4001/posts/8714bf29/comments
+Content-Type: application/json
+
+{
+  "content": "Second comment"
+}
